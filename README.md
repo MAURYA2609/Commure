@@ -4,15 +4,15 @@ FastAPI backend + React/Vite/TypeScript frontend.
 
 ## Prerequisites
 
-- [uv](https://docs.astral.sh/uv/getting-started/installation/) (`brew install uv` on macOS). It downloads Python 3.12 for you if you don't have it.
+- [uv](https://docs.astral.sh/uv/getting-started/installation/). It downloads Python 3.12 for you if you don't have it.
+  - macOS: `brew install uv`
+  - Windows (PowerShell): `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"` or `winget install --id=astral-sh.uv -e`
+  - Then open a new terminal so `uv` is on your PATH.
 - [Node.js](https://nodejs.org/) 20.19+ or 22.12+ (includes npm)
 
 ## Setup (once)
 
 ```sh
-git clone <repo-url>
-cd <repo-folder>
-
 cd backend && uv sync && cd ..        # creates backend/.venv and installs Python deps
 cd frontend && npm install && cd ..   # installs JS deps into frontend/node_modules
 ```
