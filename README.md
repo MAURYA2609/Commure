@@ -23,7 +23,7 @@ Use two terminals, both starting from the repo root.
 
 ```sh
 # Terminal 1: backend on http://127.0.0.1:8000 (API docs at /docs)
-cd backend && uv run fastapi dev app/main.py
+cd backend && uv run uvicorn app.main:app --reload --port 8000
 ```
 
 ```sh
